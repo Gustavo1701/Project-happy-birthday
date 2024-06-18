@@ -1,0 +1,2 @@
+let foto;
+let resultado;
