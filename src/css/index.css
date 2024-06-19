@@ -34,7 +34,7 @@
 }
 
 select {
-    width: 100px;
+    width: 12rem;
     height: 35px;
     border-radius: 5px;
     color: white;
@@ -45,6 +45,19 @@ select {
     border: none;
     outline: none;
 }
+
+#animacao {
+    max-width: 300px; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+#animacao img {
+    max-width: 100%; 
+    height: 450px; 
+    display: inline-block; 
+}
+
 
 @media only screen and (max-width: 763px) {
     .container-data {

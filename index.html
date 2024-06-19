@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/css/index.css">
     <title>Happy Birthday</title>
 </head>
 
 <body>
-    <div class="body-bg"></div>
-    <div class="container">
-        <div class="container-data">
-            <p>Selecione o aniversariante:</p>
-            <select id="select-aniversariante" name="aniversariante">
-                <option value="">Selecione</option>
-                <option value="">Edmar</option> 
-                <option value="">João Roberto</option>       
-            </select>
-            <div id="animacao">Aniversariante</div>
+    <div class="body-bg">
+        <div class="container">
+            <div class="container-data">
+                <p>Selecione o aniversariante:</p>
+                <select id="select-aniversariante" name="aniversariante"
+                    onchange="selecionarAniversariante(this.value)">
+                    <option value="">Selecione</option>
+                    <option value="Edmar">Edmar</option>
+                    <option value="João Roberto">João Roberto</option>
+                </select>
+                <div id="animacao"></div>
+            </div>
         </div>
     </div>
 
-    <link rel="stylesheet" href="index.js">
-  
-</body>  
+    <script src="src/js/index.js"></script>
+
+</body>
+
 </html>
