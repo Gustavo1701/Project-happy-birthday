@@ -1,5 +1,6 @@
 function selecionarAniversariante(aniversariante) {
     const resultado = document.getElementById('animacao');
+    const bgDiv2 = document.getElementById('container-1');
     const mudarFrase = document.getElementById('frase');
     const edmar = 'src/img/img-edmar.png';
     const joao = 'src/img/img-jr.png';
@@ -8,8 +9,8 @@ function selecionarAniversariante(aniversariante) {
     const somEdmar = document.getElementById('somEdmar');
 
     if (aniversariante === 'Edmar') {
-        resultado.innerHTML = `<img src="${edmar}" alt="Edmar">`;
-        resultado.style.backgroundImage = `url('${bgEdmar}')`;
+        resultado.innerHTML = `<img src="${edmar}" alt="Edmar" style="height: 400px; flex: 1;">`;
+        bgDiv2.style.backgroundImage = `url('${bgEdmar}')`;
         resultado.style.backgroundSize = 'cover'; 
         mudarFrase.innerHTML = 'Parabéns No Filter';
         criarConfetes(resultado);
@@ -20,7 +21,7 @@ function selecionarAniversariante(aniversariante) {
                 <img src="${joao}" alt="João Roberto" style="height: 550px; flex: 1;">
                 <img src="${bgJoao}" alt="Fundo João Roberto" style="height: 350px; flex: 1;">
             </div>`;
-        resultado.style.backgroundImage = 'None'
+        bgDiv2.style.backgroundImage = 'None'
         mudarFrase.innerHTML = 'Parabéns Tuê';
         criarConfetes(resultado);
         somEdmar.pause();
@@ -46,6 +47,3 @@ function criarConfetes(elementoPai) {
         }, 25000);
     }
 }
-
-
-
